@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
         rb.position = new Vector2(clampedX, clampedY);
 
         // Jump
+        /*
         bool leftButtonPressed = GameObject.FindGameObjectWithTag("BtnIzquierdo")?.GetComponent<Button>()?.isPressed ?? false;
         bool rightButtonPressed = GameObject.FindGameObjectWithTag("BtnDerecho")?.GetComponent<Button>()?.isPressed ?? false;
 
@@ -69,6 +70,7 @@ public class Player : MonoBehaviour
             isJumping = true;
             Debug.Log("Jump");
         }
+        */
 
         // Check if the top of the player has touched the top of the screen
         if (rb.position.y + (GetComponent<Renderer>().bounds.size.y / 2f) > yMax)
